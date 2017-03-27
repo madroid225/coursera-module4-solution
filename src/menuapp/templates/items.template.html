@@ -1,0 +1,30 @@
+<!--<ol>
+    <li ng-repeat="item in $ctrl.items">-->
+        <table style="margin:10px">
+            <thead>
+                <tr>
+                    <td class="first"><h4>Item</h4></td>
+                    <td class="other"><h4>Large Portion</h4></td>
+                    <td class="other"><h4>Small Portion</h4></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in $ctrl.items">
+                    <td colspan="3" width="100%">
+                        <table class="hover">
+                            <tr>
+                                <td class="first"><h5>{{item.short_name}} - {{item.name}}</h5></td>
+                                <td class="other" rowspan="2"><h5>{{item.large_portion_name}} {{item.price_large}}</h5></td>
+                                <td class="other"  rowspan="2"><h5>{{item.small_portion_name}} {{item.price_small}}</h5></td>
+                            </tr>
+                            <tr>
+                                <td class="first">{{item.description}}</td>
+                                <td></td><td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <!--</li>
+</ol>-->
